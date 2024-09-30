@@ -6,6 +6,7 @@ test.describe('Test Group', () => {
     test.beforeEach(async ({ page }) => { 
         await page.goto("https://practice.cydeo.com/");
    });
+   
 
   test('Check() checks the radio buttons and checkboxes if they havnt been checked yet', async ({ page }) => {
     
@@ -77,7 +78,7 @@ test.describe('Test Group', () => {
 
         await inputBox.fill("123");
 
-        
+
 
         let inputValue = await inputBox.inputValue();
 
